@@ -5,14 +5,14 @@
 /*****************************************************************************/
 
 .jumbotron {
-  padding: 40px 0;
-  color: #fff;
-  background: #020031; /* Old browsers */
-  background: -moz-linear-gradient(135deg, #020020 40%, #501000 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(40%,#020020), color-stop(100%,#501000)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(135deg, #020020 40%, #501000 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(135deg, #020020 40%, #501000 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(135deg, #020020 40%, #501000 100%); /* IE10+ */
-  background: linear-gradient(135deg, #020020 40%, #501000 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020020', endColorstr='#501000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 40px 0;
+    color: #fff;
+    background: #020031; /* Old browsers */
+    background: -moz-linear-gradient(135deg, #020020 40%, #501000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(40%,#020020), color-stop(100%,#501000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(135deg, #020020 40%, #501000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(135deg, #020020 40%, #501000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(135deg, #020020 40%, #501000 100%); /* IE10+ */
+    background: linear-gradient(135deg, #020020 40%, #501000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020020', endColorstr='#501000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

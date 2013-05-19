@@ -4,38 +4,33 @@ title: Joby Walker
 ---
 
 <header class="jumbotron">
-    <div class="container">
+    <div class="container-fluid">
         <h1>Joby Walker</h1>
-        <p class="lead">Technology Manager and Software Engineer</p>
+        <!-- <p class="lead">Technology Manager and Software Engineer</p> -->
     </div>
 </header>
-<div class="container">
+<div class="container-fluid">
     <div class="row-fluid">
-        <div class="span12">
-        {% for post in site.posts limit:1 %}
-            <!-- <div class="post"> -->
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="row-fluid">
+            {% for post in site.posts limit:1 %}
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p class="meta">{{ page.date | date: "%B %d, %Y" }}</p>
                 <div class="row-fluid">
                     <div class="span12">{{ post.content }}</div>
-                    <div class="span12"><hr></div>
-                    <div class="span4">
-                        <h4>Published</h4>
-                        <div class="span4">
-                            <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                        </div>
-                    </div>
+                    {{ post.tags | array_to_sentence_string }}
                 </div>
-            <!-- </div> -->
-        {% endfor %}
-        </div>
-        <hr>
-        <div class="span12">
-          <h2>Blog Posts</h2>
-          <ul class="posts">
-            {% for post in site.posts %}
-              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
-          </ul>
+        </div>
+        <div class="row-fluid">
+            <hr>
+        </div>
+        <div class="row-fluid">
+            <h3>Posts</h3>
+            <ul class="posts">
+                {% for post in site.posts %}
+                    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
